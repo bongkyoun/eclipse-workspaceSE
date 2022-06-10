@@ -14,7 +14,10 @@ public class StudentServiceUIMain {
 		while (run) {
 			System.out.println("------------메뉴-------------");
 			System.out.println("0. 전체학생출력");
+			studentService.calculate();
+			studentService.print();
 			System.out.println("1. 전체학생총점,평균,평점계산");
+			studentService.calculate();
 			System.out.println("2. 전체학생 총점으로 석차계산");
 			System.out.println("3. 번호로   검색");
 			System.out.println("4. 학점으로 검색");

@@ -1,0 +1,6 @@
+1.윈도우시작 버튼클릭
+2.cmd입력 enter
+
+C:\Users\TEA>cd C:\2022-05-JAVA-DEVELOPER\eclipse-workspaceSE\20.쓰레드[Thread]\bin
+
+C:\2022-05-JAVA-DEVELOPER\eclipse-workspaceSE\20.쓰레드[Thread]\bin> java CreateCustomThreadMain

@@ -18,12 +18,14 @@ public class JDBCFlowMain {
 		
 		String driverClass="oracle.jdbc.OracleDriver";
 		String url="jdbc:oracle:thin:@182.237.126.19:1521:xe";
-		String user="jdeveloper00";
-		String password="jdeveloper00";
+		String user="jdeveloper02";
+		String password="jdeveloper02";
 		String selectSql="select * from dept";
 		
 		/*
 		 * 1. Driver(Oracle) Class loading
+		 * 		- A. Driver 클래스 객체 생성
+		 * 		- B. DriverManager 객체에 등록
 		 */
 		Class.forName(driverClass);
 		System.out.println("1. Driver class loading");

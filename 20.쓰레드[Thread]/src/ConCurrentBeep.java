@@ -1,9 +1,9 @@
 import java.awt.Toolkit;
 
 public class ConCurrentBeep extends Thread{
-	public void run(){
-		Toolkit toolkit=Toolkit.getDefaultToolkit();
-		for(int i=0;i<10;i++) {
+	public void run() {
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+		for(int i=0; i <10; i++) {
 			try {
 				toolkit.beep();
 				Thread.sleep(1000);
@@ -11,6 +11,8 @@ public class ConCurrentBeep extends Thread{
 				System.out.println(e.getMessage());
 			}
 			
+			
 		}
 	}
 }
+

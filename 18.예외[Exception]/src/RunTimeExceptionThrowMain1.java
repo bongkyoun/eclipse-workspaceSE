@@ -1,9 +1,8 @@
 
 public class RunTimeExceptionThrowMain1 {
 	/*
-	 * 모든메쏘드는 throws RuntimeException 구문이 생략되어있다
-	 *   - 이메쏘드에서는 RuntimeException의 자식Exception들이 발생할수있다.
-	 * 
+	 * 모든 메쏘드는 throws RuntimeException 구문이 생략 되어있다.
+	 * 	- 이 메쏘드에서는 RuntimeException의 자식 Exception들이 발생할 수 있다.
 	 */
 	public static void main(String[] args)/*throws RuntimeException*/{
 		/*

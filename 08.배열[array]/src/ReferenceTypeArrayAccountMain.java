@@ -87,7 +87,7 @@ public class ReferenceTypeArrayAccountMain {
 				}
 			}
 		}
-		System.out.println("##############w잔고정렬후###############");
+		System.out.println("##############잔고정렬후###############");
 		for(int i=0;i<accounts.length;i++) {
 			accounts[i].print();
 		}
@@ -174,7 +174,6 @@ public class ReferenceTypeArrayAccountMain {
 	}
 
 }
-
 
 
 

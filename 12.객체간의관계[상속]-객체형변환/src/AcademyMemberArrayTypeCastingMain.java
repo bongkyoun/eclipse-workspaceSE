@@ -41,7 +41,7 @@ public class AcademyMemberArrayTypeCastingMain {
 		}
 		
 		
-		System.out.println("------------AcademyMember배열에있는 객체들둥에서 AcademyStudent객체들만 출력-------------");
+		System.out.println("------------AcademyMember배열에있는 객체들 중에서 AcademyStudent객체들만 출력-------------");
 		for(int i=0;i<members.length;i++) {
 			if(members[i] instanceof AcademyStudent) {
 				members[i].print();

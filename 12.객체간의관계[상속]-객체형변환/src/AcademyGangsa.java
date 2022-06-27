@@ -1,10 +1,12 @@
 public class AcademyGangsa extends AcademyMember {
 	public String subject;//강의과목
 	public AcademyGangsa() {
-		super();
+		
 	}
 	public AcademyGangsa(int no,String name,String subject) {
-		super(no, name);
+		super(no,name);
+		//this.no=no;
+		//this.name=name;
 		this.subject=subject;
 	}
 	@Override

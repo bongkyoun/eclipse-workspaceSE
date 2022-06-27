@@ -33,6 +33,7 @@ class Parent extends Object{
 		System.out.println("Parent.method4()");
 	}
 	
+
 }
 class Child extends Parent{
 	public void method4() {
@@ -47,21 +48,21 @@ class Child extends Parent{
 public class ParentChildTypeCastingMain {
 
 	public static void main(String[] args) {
-		System.out.println("-------------<< Child >>----------------");
-		Child c1=new Child();
+		System.out.println("-----------<< Child >>----------");
+		Child c1 = new Child();
 		c1.method1();
 		c1.method2();
 		c1.method3();
-		c1.method4();//재정의메쏘드호출
+		c1.method4();
 		c1.method5();
 		/*
 		 2. 자식클래스타입 객체의주소를 부모클래스타입 객체의 주소로 형변환
        		- 자동으로 이루어진다(묵시적)
 		 */
-		System.out.println("-------------<< Child--> Parent >>----------------");
+		System.out.println("-----------<< Child -->Parent >>----------");
 		Parent p1 = c1;
 		if(p1==c1) {
-			System.out.println(p1+"=="+c1+"[p1과 c1 의 주소가 동일]");
+			System.out.println(p1+"=="+c1+"[p1과 c1의 주소가 동일");
 		}
 		p1.method1();
 		p1.method2();
@@ -69,45 +70,52 @@ public class ParentChildTypeCastingMain {
 		p1.method4();
 		/*
 		p1.method5();
-		*/
+		 */
 		/*
 		 3. 부모클래스타입 객체의주소를 자식클래스타입 객체의 주소로 형변환
        		- 원칙적으로는 불가능하다
 		 */
-		Parent p2=new Parent();
+		Parent p2=new Parent ();
 		/*
-		<< Type mismatch: cannot convert from Parent to Child >>
-		Child c2=p2;
-		*/
-		
-		    /*
-			- 부모의 탈을쓴 자식객체 는 가능하다.
-		    */
+		 << Type mismatch : cannot convert from Parent to Child >> //에러코드
+		Child c2=(Child)p2;		//error
+		 */
+			/*
+			 - 부모의 탈을 쓴 자식객체는 가능하다.
+			 */
 		/*
-		Child c3=new Child();
+		Child c3 = new Child();
 		Parent p3=c3;
 		*/
-		
-		System.out.println("--Child객체 Parent타입변수로호출--");
+		System.out.println("---Child 객체 Parent 타입 변수로 호출--");
 		Parent p3=new Child();
 		p3.method1();
 		p3.method2();
 		p3.method3();
 		p3.method4();
 		/*
-		p3.method5();
-		*/
-		Child  c3=(Child)p3;
-		System.out.println("--Child객체 Child타입변수로호출--");
+		 p4.method4();		/호출 안됨
+		 */
+		Child c3=(Child)p3;
+		System.out.println("--Child 객체 Child 타입 변수로 호출");
 		c3.method1();
 		c3.method2();
 		c3.method3();
 		c3.method4();
 		c3.method5();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
-
 
 
 

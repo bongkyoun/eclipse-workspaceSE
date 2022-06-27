@@ -17,9 +17,9 @@ public class JavaClassImportMain {
 		/*
 		 * java.lang package에있는 클래스들은 import 구문생략가능
 		 */
-		java.lang.String str1 = "임포트";
-		String str2 = "김경호";
-		Object obj = new Object();
+		java.lang.String str1="임포트";
+		String str2="김경호";
+		Object obj=new Object();
 		System.out.println(Math.random());
 		/*
 		 * import 단축키
@@ -27,17 +27,20 @@ public class JavaClassImportMain {
 		 *  
 		 *  ctrl + space -->클래스리스트-->클래스선택-->import 구문추가
 		 */
-
+		
 		InputStream in;
 		OutputStream out;
 		Socket socket;
-
+		
 		Connection con;
-
+		
 		ShopService shopService;
 		Member member;
 		Product p;
-
+		
+		
+		
+			
 	}
 
 }

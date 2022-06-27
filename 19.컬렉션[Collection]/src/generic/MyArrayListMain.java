@@ -14,7 +14,8 @@ public class MyArrayListMain {
 		myAccountList.add(new Account());
 		myAccountList.add(new Account());
 		/*
-		myAccountList.add(new Car());
+		myAccountList.add(new Car
+		());
 		myAccountList.add(new Car());
 		*/
 		myAccountList.add(new Account());

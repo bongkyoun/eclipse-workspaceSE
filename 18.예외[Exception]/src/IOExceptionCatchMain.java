@@ -17,7 +17,6 @@ public class IOExceptionCatchMain {
 		try {
 			System.out.println("stmt2");
 			Socket socket = new Socket("www.daum.com", 80);
-			
 			/*
 			 1.예외상황발생하면 IOException객체생성하고 생성된객체를 try블록안에서 던지면
 			    catch블록에서 IOException객체를 잡는다.

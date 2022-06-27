@@ -16,4 +16,5 @@ public class AbstractClassChildMain {
 		acc2.method1();
 		acc2.method2();
 	}
+
 }

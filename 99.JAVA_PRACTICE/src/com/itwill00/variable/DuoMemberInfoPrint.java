@@ -1,5 +1,4 @@
 package com.itwill00.variable;
-//
 
 public class DuoMemberInfoPrint{
 	public static void main(String[] args) {

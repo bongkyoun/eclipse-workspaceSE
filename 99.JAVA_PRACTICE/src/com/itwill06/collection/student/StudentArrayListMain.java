@@ -60,7 +60,13 @@ public class StudentArrayListMain {
 		 */
 		System.out.println("7.번호3번학생삭제");
 		
-		
+		for (int i = 0; i < studentList.size(); i++) {
+			if(studentList.get(i).getNo()==3) {
+				Student removeStudent=studentList.remove(i);
+				removeStudent.print();
+				break;
+			}
+		}
 		
 		/*
 		 * 8.이름KIM인 학생들삭제

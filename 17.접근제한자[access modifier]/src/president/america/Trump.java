@@ -19,4 +19,6 @@ public class Trump {
 		System.out.println("Trump.method4()");
 	}
 	
+	
+	
 }

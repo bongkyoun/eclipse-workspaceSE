@@ -5,15 +5,12 @@ public class BookLibraryMain {
 		/*
 		 * 회원객체생성
 		 */
-		BookMember bookMember=new BookMember(1,"김진호","010-5625-9658");
-		
+		BookMember bookMember=new BookMember();
 		/*
 		 * 책객체들생성
 		 */
 		Book book1=new Book(46372, "책제목1", "문학", "좋은책1");
-		Book book2=new Book(21321, "책제목2", "문학", "좋은책2");
-		Book[] rentBooks= {book1,book2};
-		bookMember.setBooks(rentBooks);
+		Book book2=new Book(46372, "책제목2", "문학", "좋은책2");
 		
 		/*
 		 * 회원이 책들 대여

@@ -1,6 +1,6 @@
 package nogeneric;
 
-public class Account extends Object implements Comparable<Account>{
+public class Account extends Object{
 	/*
 	 * 1.속성[멤버필드]
 	 */
@@ -96,46 +96,9 @@ public class Account extends Object implements Comparable<Account>{
 	public void setIyul(double iyul) {
 		this.iyul = iyul;
 	}
-	@Override
-	public int compareTo(Account nextAccount) {
-		/*
-		System.out.println("------compareTo----------");
-		this.print();
-		nextAccount.print();
-		System.out.println("-------------------------");
-		*/
-		/*
-		 * << 오름차순 >>
-		 *  - Collection.sort(accountList) 메쏘드가 이메쏘드를 호출한후 반환된결과를 받아서정렬(교환)한다
-		 *  - 현재Account객체와 다음Account객체를 잔고를비교해서 앞의것이 더크다면 교환을해서 뒤로보내야한다.
-		 *  - 그래서 현재Account객체의 잔고가 다음Account객체의 잔고보다 크다면 양수1 을 반환해준다.
-		 *  - 양수1을 반환받은 Collection.sort()메쏘드는 현재Account객체와 다음Account객체의 주소교환작업을할것이다. 
-		 */
-		/*
-		 * << 내림차순 >>
-		 *  - Collection.sort(accountList) 메쏘드가 이메쏘드를 호출한후 반환된결과를 받아서정렬한다
-		 *  - 현재Account객체와 다음Account객체를 비교해서 앞의것이 더작다면 교환을해서 뒤로보내야한다.
-		 *  - 그래서 현재Account객체의 잔고가 다음Account객체의 잔고보다 작다면 양수1 을 반환해준다.
-		 *  - 양수1을 반환받은 Collection.sort()메쏘드는 현재Account객체와 다음Account객체의 주소교환작업을할것이다. 
-		 */
-		/******잔고 오름차순********/
-		if(this.balance - nextAccount.getBalance()>0) {
-			return 1;
-		}else {
-			return -1;
-		}
-		/**************************/
-		
-		/******이름 오름차순********
-		if(this.owner.compareTo(nextAccount.getOwner())>0) {
-			return 1;
-		}else {
-			return -1;
-		}
-		*/
-	}
 	
 }
+
 
 
 

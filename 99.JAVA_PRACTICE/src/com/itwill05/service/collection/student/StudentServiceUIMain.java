@@ -28,13 +28,13 @@ public class StudentServiceUIMain {
 			System.out.println("9. 종료");
 			System.out.println("----------------------------");
 			System.out.print("메뉴번호선택> ");
-			
 			int menuNo =scanner.nextInt();
 			if(menuNo==0) {
 				//0. 전체학생출력
 				ArrayList<Student> studentList=studentService.getStudentList();
 				Student.headerPrint();
 				for (Student student : studentList) {
+					student.print();
 					student.print();
 				}
 			}else if(menuNo==1) {

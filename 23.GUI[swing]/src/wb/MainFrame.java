@@ -7,6 +7,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 
@@ -37,36 +39,40 @@ public class MainFrame extends JFrame {
 	 */
 	public MainFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 391, 337);
+		setBounds(100, 100, 465, 456);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JButton btnNewButton = new JButton("로그인");
-		btnNewButton.setBounds(60, 223, 97, 23);
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setBounds(69, 273, 97, 23);
 		contentPane.add(btnNewButton);
 		
+		JButton btnNewButton_1 = new JButton("취소");
+		btnNewButton_1.setBounds(233, 273, 97, 23);
+		contentPane.add(btnNewButton_1);
+		
 		textField = new JTextField();
-		textField.setBounds(190, 146, 116, 21);
+		textField.setBounds(233, 186, 116, 21);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(190, 93, 116, 21);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
-		
-		JButton btnNewButton_1 = new JButton("취소");
-		btnNewButton_1.setBounds(208, 223, 97, 23);
-		contentPane.add(btnNewButton_1);
-		
-		JLabel lblNewLabel = new JLabel("아이디");
-		lblNewLabel.setBounds(60, 96, 57, 15);
+		JLabel lblNewLabel = new JLabel("패스워드");
+		lblNewLabel.setBounds(69, 189, 57, 15);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("패쓰워드");
-		lblNewLabel_1.setBounds(60, 149, 57, 15);
+		JLabel lblNewLabel_1 = new JLabel("아이디");
+		lblNewLabel_1.setBounds(69, 100, 57, 15);
 		contentPane.add(lblNewLabel_1);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(233, 97, 116, 21);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
 	}
 }

@@ -21,8 +21,7 @@ public class Student {
 	private int tot;
 	private double avg;
 	private char grade;
-	private int rank;
-
+	private int rank=1;
 	/*
 	 * <<생성자메쏘드 선언[오버로딩]>>
 	 *  - 인자 0개짜리 생성자(기본생성자선언) 
@@ -30,9 +29,8 @@ public class Student {
 	 */
 	public Student() {
 		// TODO Auto-generated constructor stub
-		this.rank = 1;
 	}
-
+	
 	public Student(int no, String name, int kor, int eng, int math) {
 		super();
 		this.no = no;
@@ -40,7 +38,6 @@ public class Student {
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
-		this.rank = 1;
 	}
 
 	/*
@@ -78,8 +75,7 @@ public class Student {
 
 		return grade;
 	}
-
-	// 석차증가메쏘드
+	
 	
 
 	public static void headerPrint() {
@@ -88,7 +84,7 @@ public class Student {
 		System.out.printf("-----------------------------------------------%n");
 
 	}
-	
+
 	public void print() {
 		System.out.printf("%3d %5s %4d %4d %4d %4d %5.1f %3c %4d%n", this.no, this.name, this.kor, this.eng, this.math,
 				this.tot, this.avg, this.grade, this.rank);
@@ -165,5 +161,5 @@ public class Student {
 	public void setRank(int rank) {
 		this.rank = rank;
 	}
-
+	
 }

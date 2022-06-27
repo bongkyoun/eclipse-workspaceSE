@@ -14,7 +14,7 @@ public class DvdShopMain {
 		Dvd dvd1=new Dvd(123,"영화1","전쟁");
 		Dvd dvd2=new Dvd(343,"영화2","전쟁");
 		Dvd dvd3=new Dvd(566,"영화3","전쟁");
-		
+		Dvd dvd4=new Dvd(889,"영화4","전쟁");
 		
 		/*
 		 * 회원이Dvd들을 대여

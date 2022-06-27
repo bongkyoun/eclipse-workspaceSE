@@ -39,20 +39,19 @@ public class CollectionsMain {
 		System.out.println("-----------------sort-------------------");
 		System.out.println(intList);
 		Collections.sort(intList);//sort
-		System.out.println("sort-->"+intList);
+		System.out.println("sort    -->"+intList);
 		Collections.reverse(intList);//reverse
-		System.out.println("reverse-->"+intList);
+		System.out.println("reverse -->"+intList);
 		Collections.shuffle(intList);//shuffle
-		System.out.println("shuffle-->"+intList);
+		System.out.println("shuffle -->"+intList);
 		
 		System.out.println(stringList);
 		Collections.sort(stringList);
-		System.out.println(stringList);
-		System.out.println("sort-->"+stringList);
-		Collections.reverse(stringList);//reverse
-		System.out.println("reverse-->"+stringList);
-		Collections.shuffle(stringList);//shuffle
-		System.out.println("shuffle-->"+stringList);
+		System.out.println("sort    -->"+stringList);
+		Collections.reverse(stringList);
+		System.out.println("reverse -->"+stringList);
+		Collections.shuffle(stringList);
+		System.out.println("shuffle -->"+stringList);
 		
 		System.out.println(">>>정렬전[Comparable]");
 		for(Account account:accountList) {
@@ -78,7 +77,7 @@ public class CollectionsMain {
 			    B. 비교의 결과값 정수가 양수이면 두번째와 세번째를 교환   한다. 
 			       비교의 결과값 정수가 음수이면 두번째와 세번째를 교환 안한다. 
 		 */
-		Collections.sort(accountList);
+		//Collections.sort(accountList); 왜 안됌?
 		
 		
 		System.out.println(">>>정렬후[Comparable]");
@@ -91,16 +90,19 @@ public class CollectionsMain {
 		 */
 		Collections.sort(accountList, 
 				new AccountBalanceDescComparator());
-		System.out.println(">>잔고 내림차순 정렬후[Comparator]");
+		System.out.println(">>잔고내림차순정렬후[Comparator]");
 		for (Account account : accountList) {
 			account.print();
 		}
+		
 		Collections.sort(accountList, 
-				new AccountBalanceDescComparator());
-		System.out.println(">>이름 오름차순 정렬후[Comparator]");
+				new AccountOwnerAscComparator());
+		System.out.println(">>이름오름차순정렬후[Comparator]");
 		for (Account account : accountList) {
 			account.print();
 		}
+		
+		
 		
 	}
 

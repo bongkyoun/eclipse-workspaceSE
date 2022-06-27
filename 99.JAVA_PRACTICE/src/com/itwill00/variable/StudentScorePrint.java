@@ -48,7 +48,9 @@ public class StudentScorePrint {
 		 * 학생2명의 국어, 영어, 수학점수의 유효성체크
 		 *   - 100점이 넘는 수나 음수가 입력되면 메세지를 출력하고 return(프로그램종료)한다.
 		 */
-		
+		if(kor1>=100) {
+			return;
+		}
 		
 		
 		/*

@@ -5,7 +5,7 @@ public class MyArrayList<T> {
 	private Object[] elementData;
 	public MyArrayList() {
 		elementData = new Object[10];
-		size=0;
+		size = 0;
 	}
 	
 	public void add(T element) {
@@ -18,8 +18,12 @@ public class MyArrayList<T> {
 	public T get(int index) {
 		return (T)elementData[index];
 		
+		
 	}
 	
 	
-
+	
+	
+	
+	
 }

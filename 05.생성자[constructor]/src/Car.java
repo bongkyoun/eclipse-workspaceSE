@@ -7,7 +7,7 @@
  *
  */
 public class Car {
-	public static final int FEE_PER_HOUR = 1000;//시간당주차요금
+	public static final int FEE_PER_HOUR = 1000;//시간당 주차 요금
 	
 	/*
 	클래스의 구성요소
@@ -83,7 +83,7 @@ public class Car {
 	 * 요금계산
 	 */
 	public void calculateFee() {
-		this.fee =(this.outTime-this.inTime)* Car.FEE_PER_HOUR;
+		this.fee =(this.outTime-this.inTime)*Car.FEE_PER_HOUR;
 	}
 	/*
 	 * 헤더출력

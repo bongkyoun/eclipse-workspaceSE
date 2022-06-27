@@ -1,16 +1,16 @@
 public class AcademyStaff extends AcademyMember {
 	public String depart;//부서
 	public AcademyStaff() {
-		// TODO Auto-generated constructor stub
+		
 	}
-	public AcademyStaff(int no,String name,String depart) {
+	public AcademyStaff(int no, String name, String depart) {
 		this.no=no;
 		this.name=name;
-		this.depart = depart;
+		this.depart=depart; 
 	}
 	public void staffPrint() {
 		this.print();
-		System.out.println(this.depart);
+		System.out.println(depart);
 	}
 	public String getDepart() {
 		return depart;

@@ -18,7 +18,7 @@ public class MultiExceptionThrowMain {
 		String str = "";
 		System.out.println(str.length());
 		System.out.println("stmt3");
-		
+		 
 		//예외발생예상코드
 		//Unhandled exception type SQLException
 		DriverManager.getConnection("");

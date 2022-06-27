@@ -1,10 +1,9 @@
-
-
 /*
 쓰레드(thread)(실행흐름): 
    - 프로그램코드를 실행시키는 힘 
-   - 메인쓰레드,AWT(GUI) 쓰레드,사용자정의 쓰레드
+   - 메인쓰레드,AWT 쓰레드,사용자정의 쓰레드
    - 언제 만드냐--> 두가지일을 동시에 해야할때..
+ 
  
 - 쓰레드객체 만드는 방법(형식)
      
@@ -31,7 +30,7 @@
           		 }
           } 
     2. Runnable interface를 implements 해서만든다
-      ex>  public class ThreadImpl  implements Runnable{
+      ex>  public class ThreadImpl implements Runnable{
            		public void run(){
           		 }
            } 
@@ -44,16 +43,35 @@ public class MainThreadMain {
 	public static void main(String[] args) {
 		System.out.println("main thread start");
 		/*
-		 * 현재코드를 실행시키는 메인쓰레드의 쓰레드객체얻기
+		 * 현재코드를 실행시키는 메인쓰레드의 쓰레 객체얻기
 		 */
-		Thread currentThread=Thread.currentThread();
-		System.out.println("main thread name:"+currentThread.getName());
-		System.out.println("main thread priority:"+currentThread.getPriority());
-		MainThreadCalled mtc=new MainThreadCalled();
+		Thread currentThread = Thread.currentThread();
+		System.out.println("main thread name : "+currentThread.getName());
+		System.out.println("main thread priority : "+currentThread.getPriority());
+		MainThreadCalled mtc = new MainThreadCalled();
 		mtc.main_thread_called_method();
 		System.out.println("main thread end");
-		
 		return;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

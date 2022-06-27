@@ -24,21 +24,20 @@ public class ClassNotFoundExceptionCatchMain {
 			System.out.println("stmt2");
 		}catch (ClassNotFoundException e) {
 			/*
-			 * catch block-->예외가 발생시 실행되는 블록
+			 * catch block 예외가 발생 시 실행되는 블록
 			 */
 			System.out.println("catch block start");
 			System.out.println("ClassNotFoundException-->"+e.getMessage());
 			System.out.println("catch block end");
+			JOptionPane.showConfirmDialog(null,"고객님 죄송합니다람쥐."+e.getMessage());
 			/*
-			 * 사용자에게 메세지를 보여준다.
-			 */
-			//JOptionPane.showMessageDialog(null,"호갱님 죄송합니다."+e.getMessage());
+			 * 사용자에게 메세지를 보여준다
+			 * 			 */
 			/*
-			 * 쓰레드블록킹(대기)
+			 * 쓰레드 블록킹(대기)
 			 */
 		}
 		System.out.println("stmt3");
-		return;
 	}
 
 }

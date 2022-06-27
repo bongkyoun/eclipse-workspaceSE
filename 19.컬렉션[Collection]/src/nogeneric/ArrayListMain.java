@@ -31,22 +31,27 @@ public class ArrayListMain {
 		accountList.add(acc5);
 		System.out.println("#size:"+accountList.size());
 		System.out.println(accountList);
+		
 		System.out.println("****************2.add(index,element)********************************");
 		accountList.add(1, new Account(1112, "QUIM", 99999, 9.9));
 		System.out.println("#size:"+accountList.size());
 		System.out.println(accountList);
+		
 		System.out.println("****************3.set(index,element)********************************");
 		accountList.set(5, new Account(9999,"LAST",88888,8.8));
 		System.out.println("#size:"+accountList.size());
 		System.out.println(accountList);
+		
 		System.out.println("****************4.get(index)********************************");
 		Account getAccount=(Account)accountList.get(1);
 		getAccount.print();
+		
 		System.out.println("****************5.remove(index)********************************");
 		Account removeAccount = (Account)accountList.remove(1);
 		removeAccount.print();
 		System.out.println("#size:"+accountList.size());
 		System.out.println(accountList);
+		
 		System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%업무실행%%%%%%%%%%%%%%%%%%%%%%%");
 		System.out.println("*****************1.계좌전체출력************************");
 		Account.headerPrint();
@@ -80,14 +85,13 @@ public class ArrayListMain {
 				break;
 			}
 		}
-		System.out.println("****************5.이름이 KING인계좌 여러개삭제[QUIZ]*****************");
-		for(int i=0;i<accountList.size();i++) {
+		System.out.println("***************5.이름이 KING인 계좌 삭제*************");
+		for(int i = 0; i<accountList.size(); i++) {
 			Account tempAccount=(Account)accountList.get(i);
 			if(tempAccount.getOwner().equals("KING")) {
 				Account removeAcc = (Account)accountList.remove(i);
 				removeAcc.print();
 				i--;
-				
 			}
 		}
 		System.out.println("*****************1.계좌전체출력************************");
@@ -99,17 +103,3 @@ public class ArrayListMain {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

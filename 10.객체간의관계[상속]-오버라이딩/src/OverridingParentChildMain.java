@@ -12,19 +12,16 @@
  *   		}
  *        
  *        public class Sub extends Super{
- *        		
-	         
- *        
  *        		public void print(){
  *        		}
- *        
  *        }
  * 
  */
-class OverridingParent{
+class OverridingParent {
 	public void method1() {
 		System.out.println("OverridingParent.method1()");
 	}
+
 	public void method2() {
 		System.out.println("OverridingParent.method2()");
 	}
@@ -32,60 +29,47 @@ class OverridingParent{
 
 class OverridingChild extends OverridingParent{
 	int member;
-	/*
-	public void method1() {
-		System.out.println("OverridingParent.method1()");
-	}
+	/*	public void method1() {
+			System.out.println("OverridingParent.method1()");
+		}
+	
+	
+		public void method2() {
+			System.out.println("OverridingParent.method2()");
+		}
+	}*/
 	public void method2() {
-		System.out.println("OverridingParent.method2()");
-	}
-	 */
-	public void method2() {
-		System.out.println("--------재정의된 method2 start-----");
+		System.out.println("-------재정의 된 method2 start-------");
 		/*
 		 * super
-		 *   - this와 같은 self참조변수
-		 *   - this와 같은 주소를 가리킨다.
-		 *   - 재정의에의해서 은폐된 메쏘드를 호출할때사용
+		 *  - this와 같은 self 참조 변수
+		 *  - this와 같은 주소를 가리킨다.
+		 *  - 재정의에 의해서 은폐된 메쏘드를 호출할때 사용	 
 		 */
 		super.method2();
-		System.out.println("OverridingChild.method2()추가작업");
-		System.out.println("--------재정의된 method2 end  -----");
+		System.out.println("OverridingChild.method2() 추가작업");
+		System.out.println("-------재정의 된 method2 end  -------");
 		/*
-		 * 재정의하면 
-		 *   - 상속받은 method2()는 은폐
-		 *   - 자식에서 재정의된메쏘드만호출
+		 * 재정의 하면
+		 * 	- 상속받은 method2()는 은폐
+		 * 	- 자식에서 재정의 된 method만 호출
 		 */
-		
 	}
 	public void method3() {
-		System.out.println("OverridingChild.method3()");
+		System.out.println("OverridingParent.method4()");
 	}
 }
-
 
 public class OverridingParentChildMain {
 
 	public static void main(String[] args) {
-		OverridingChild oc=new OverridingChild();
+		OverridingChild oc= new OverridingChild();
 		oc.method1();
 		/*
-		 oc.method2()호출시에는 재정의된메쏘드만호출
+		 * 
 		 */
 		oc.method2();
 		oc.method3();
-
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-

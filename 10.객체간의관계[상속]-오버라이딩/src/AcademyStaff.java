@@ -1,7 +1,7 @@
 public class AcademyStaff extends AcademyMember {
 	public String depart;//부서
 	public AcademyStaff() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	public AcademyStaff(int no,String name,String depart) {
 		this.no=no;

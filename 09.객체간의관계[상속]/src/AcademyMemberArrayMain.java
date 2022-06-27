@@ -1,5 +1,4 @@
 
-
 public class AcademyMemberArrayMain {
 
 	public static void main(String[] args) {

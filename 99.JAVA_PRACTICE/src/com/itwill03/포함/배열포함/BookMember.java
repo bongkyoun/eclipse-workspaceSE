@@ -15,21 +15,6 @@ public class BookMember {
 		
 	}
 	
-	public BookMember(int no, String name, String phoneNumber) {
-		super();
-		this.no = no;
-		this.name = name;
-		this.phoneNumber = phoneNumber;
-	}
-
-	public Book[] getBooks() {
-		return books;
-	}
-
-	public void setBooks(Book[] books) {
-		this.books = books;
-	}
-
 	public int getNo() {
 		return no;
 	}
@@ -49,11 +34,16 @@ public class BookMember {
 		this.phoneNumber = phoneNumber;
 	}
 	
+
+
+	
+
+
+
+	
+	
 	public void print() {
 		System.out.println(no+"\t"+name+"\t"+phoneNumber+"\t");
-		for(int i=0;i<books.length;i++) {
-			books[i].print();
-		}
 	}
 	
 	

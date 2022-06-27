@@ -7,9 +7,13 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import dao.common.DataSource;
+
 public class AddressDao {
 	/*
-	 * Dao 객체는 멤버변수로 Connection을 생성하는 DataSource 객체를 가짐
+	 * Dao(Data[DataBase] Access Object)객체(클래스)
+	 *   - address테이블에 CRUD(Create,Read,Update,Delete)작업을 하는 
+	 *     단위메쏘드를 가지고있는 객체(클래스)
 	 */
 	private DataSource dataSource;
 	public AddressDao() {

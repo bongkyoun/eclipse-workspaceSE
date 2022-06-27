@@ -5,10 +5,10 @@
 public class AcademyMember extends Object {
     private int no;
     private String name;
-    
+  
     public AcademyMember() {
 	}
-	
+    
 	public AcademyMember(int no, String name) {
 		this.no = no;
 		this.name = name;

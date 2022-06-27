@@ -4,8 +4,9 @@ public class StudentPrint {
 
 	public static void main(String[] args) {
 		/*
-		 * 1.출력할 데이타를 담을 변수선언
-		 * << 학번, 이름, 국어, 영어, 수학, 총점, 평균, 평점, 석차 >>
+		 * 1.성적관리에서 학생2명 데이타를 담을 변수선언
+		        - << 번호, 이름, 국어, 영어, 수학, 총점, 평균, 평점, 석차 >>
+		 * 	- 번호(int), 이름(String), 국어, 영어, 수학, 총점, 평균(double), 평점(A,B,C)(char), 석차(int)
 		 */
 		int no1;
 		String name1;
@@ -28,8 +29,8 @@ public class StudentPrint {
 		int rank2;
 		
 		/*
-		 2.변수에 데이타 대입
-		 학생 2명의 기본데이터(번호, 이름, 국어, 영어, 수학) 입력 
+		 * 2.변수에 데이타 대입
+		 *   - 학생 2명의 기본데이터(번호, 이름, 국어, 영어, 수학) 입력 
 		 */
 		no1=1;
 		name1="김경미";
@@ -42,11 +43,9 @@ public class StudentPrint {
 		kor2=90;
 		eng2=97;
 		math2=99;
-		
-		
-		/* 
-		 * 3.학생 2명의 기본데이터(번호, 이름, 국어, 영어, 수학)를 이용해서
-		 *  총점, 평균 연산후 대입 (평점은 F , 석차는 0을 대입)
+		/*
+		 *3. 학생 2명의 기본데이터(번호, 이름, 국어, 영어, 수학)를 이용해서
+		 *   총점, 평균 계산 후 대입 (평점은 F , 석차는 0을 대입)
 		 */
 		tot1 = kor1+eng1+math1;
 		avg1 = tot1/3.0;
@@ -57,7 +56,6 @@ public class StudentPrint {
 		avg2 = tot2/3.0;
 		grade2='F';
 		rank2=0;
-		
 		/*
 		- 출력포맷
  		- 평균은 소수점이하 0 자리수까지 출력하세요
@@ -73,9 +71,10 @@ public class StudentPrint {
 		System.out.println("--------------학생 성적출력-------------------");
 		System.out.println("학번  이름   국어 영어 수학 총점 평균 평점 석차");
 		System.out.println("-----------------------------------------------");
-		System.out.println(no1+"   "+name1+" "+kor1+" "+eng1+" "+math1+" "+tot1+" "+avg1+" "+grade1+" "+rank1);
-		System.out.println(no2+"   "+name2+" "+kor2+" "+eng2+" "+math2+" "+tot2+" "+avg2+" "+grade2+" "+rank2);
+		System.out.println(no1+"   "+name1+" "+kor1+" "+eng1+" "+math1+" "+tot1+" "+(int)avg1+" "+grade1+" "+rank1);
+		System.out.println(no2+"   "+name2+" "+kor2+" "+eng2+" "+math2+" "+tot2+" "+(int)avg2+" "+grade2+" "+rank2);
 		System.out.println("-----------------------------------------------");
 	}
 
 }
+

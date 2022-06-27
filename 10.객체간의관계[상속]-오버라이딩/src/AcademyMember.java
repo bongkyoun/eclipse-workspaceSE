@@ -2,7 +2,7 @@
  * - Academy구성원들의 공통속성과기능을 가지고있는 부모클래스(super)
  * - AcademyStudent,AcademyGangsa,AcademyStaff 클래스들이 상속받아 재사용하기위한클래스
  */
-public class AcademyMember extends Object {
+public class AcademyMember {
     public int no;
     public String name;
     

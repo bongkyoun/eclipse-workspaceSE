@@ -12,7 +12,7 @@
  *     상속  받아야한다. 
  * 
  */
-public class Parent extends Object{
+public class Parent {
 	public int member1;
 	public int member2;
 	public void method1() {

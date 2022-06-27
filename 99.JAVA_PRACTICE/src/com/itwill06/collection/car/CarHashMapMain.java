@@ -1,7 +1,6 @@
 package com.itwill06.collection.car;
 
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class CarHashMapMain {
 
@@ -16,7 +15,7 @@ public class CarHashMapMain {
 		Car c8 = new Car("7789",10 );
 		Car c9 = new Car("4690",11 );
 		/*
-		 * 0.Car HashMap 객체생성 초기화
+		 * Car HashMap 객체생성 초기화
 		 */
 		HashMap<String,Car> carMap=new HashMap<String,Car>();		
 		System.out.println("1.입차 9대");
@@ -24,21 +23,8 @@ public class CarHashMapMain {
 		 * 1.차량객체생성
 		 * 2.carMap저장
 		 */
-		carMap.put(c1.getNo(), c1);
-		carMap.put(c2.getNo(), c2);
-		carMap.put(c3.getNo(), c3);
-		carMap.put(c4.getNo(), c4);
-		carMap.put(c5.getNo(), c5);
-		carMap.put(c6.getNo(), c6);
-		carMap.put(c7.getNo(), c7);
-		carMap.put(c8.getNo(), c8);
-		carMap.put(c9.getNo(), c9);
-		System.out.println(carMap);
 		System.out.println("2.차량번호 7789번  차한대 정보출력");
-		
 		System.out.println("3.입차시간 8시이후 차량여러대 찾아서 정보출력");
-		
-		
 		System.out.println("4.2389번차량 12시 출차");
 		/*
 		 * 1. 2389번차량찾기
@@ -47,7 +33,6 @@ public class CarHashMapMain {
 		 * 4. 2389번차량 주차장에서 차량삭제
 		 */
 		System.out.println("5. 2389번차량 출차후전체 차량출력");
-		
 	}
 
 }

@@ -30,7 +30,7 @@ public class Address {
 		this.id = id;
 		this.name = name;
 		this.phone = phone;
-		this.address = address;
+		this.address = address; 
 	}
 	public int getNo() {
 		return no;

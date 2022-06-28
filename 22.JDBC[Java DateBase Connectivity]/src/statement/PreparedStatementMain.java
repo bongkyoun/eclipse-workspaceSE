@@ -103,9 +103,9 @@ public class PreparedStatementMain {
 		GUEST_TITLE             VARCHAR2(100)  
 		GUEST_CONTENT           VARCHAR2(4000) 
 		*/
-		String insertSql = "insert into guest values(guest_guest_no_seq.nextval,?,?,?,?,?,?)";
+		String insertSql = "insert into guest values(guest_guest_no_seq.nextval,?,sysdate,?,?,?)";
 		pstmt = con.prepareStatement(insertSql);
-		pstmt.setString(1, "김소라");
+		pstmt.setString(1, "김유라");
 		java.util.Date utilBirthDay = new SimpleDateFormat("yyyy/MM/dd").parse("1998/05/05");
 		
 		Date sqlBirthDay = new Date(utilBirthDay.getTime());

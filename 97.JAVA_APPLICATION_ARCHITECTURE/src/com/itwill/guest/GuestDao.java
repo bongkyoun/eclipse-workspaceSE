@@ -19,6 +19,7 @@ public class GuestDao {
 	/*
 	 * Dao 객체는멤버변수로 Connection을 생성하는 DataSource객체를 가짐
 	 */
+	
 	private DataSource dataSource;
 	public GuestDao() {
 		dataSource=new DataSource();

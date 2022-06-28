@@ -11,9 +11,9 @@
 
   ex>
 	public class GuestService{
-		private GuestDao GuestDao;
+		private GuestDao guestDao;
 		public GuestService(){
-			GuestDao=new GuestDao();
+			this.guestDao=new GuestDao();
 		}
 		
 		/*

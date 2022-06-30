@@ -1,11 +1,4 @@
 --notice insert
-/*
-CREATE TABLE notice(
-		n_no                          		NUMBER(10)		 NULL ,
-		n_title                        		VARCHAR2(100)		 NULL ,
-		n_date                        		DATE		 DEFAULT sysdate		 NULL ,
-		n_content                     		VARCHAR2(3000)		 NULL 
-*/
 
 insert into notice(n_no, n_title, n_date, n_content) 
 VALUES(notice_n_no_seq.nextval, 
@@ -21,4 +14,6 @@ insert into notice(n_no, n_title, n_date, n_content)
 VALUES(notice_n_no_seq.nextval, 
                         '회원가입 이벤트', 
                          sysdate, 
-                        '안녕하세요! 마켓콜리 입니다. 마켓콜리를 사랑해주시고 아껴주신 고객님께 진심으로 감사드립니다. 신규가입한 회원님들께 무료 배송 1회 서비스를 진행중입니다.');
+                        '안녕하세요! 마켓콜리 입니다. 마켓콜리를 사랑해주시고 아껴주신 고객님께 진심으로 감사드립니다. 신규가입한 회원님들께 무료 배송 1회 서비스를 진행중입니다. 많은 이용 바랍니다!');
+                        
+commit;

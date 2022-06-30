@@ -1,19 +1,4 @@
---USER_TABLE insert
---table data
-/*
-        u_no                          		NUMBER(10)		 NOT NULL,
-		u_id                          		VARCHAR2(10)		 NOT NULL,
-		u_pw                          		VARCHAR2(20)		 NOT NULL,
-		u_name                        		VARCHAR2(50)		 NOT NULL,
-		u_email                       		VARCHAR2(40)		 NOT NULL,
-		u_phone                       		VARCHAR2(20)		 NOT NULL,
-		u_address                     		VARCHAR2(100)		 NOT NULL,
-		u_birth                       		VARCHAR2(20)		 NOT NULL,
-		u_job                         		VARCHAR2(20)		 DEFAULT Null		 NULL ,
-		u_joindate                    		DATE		 DEFAULT sysdate		 NOT NULL
-*/
-
---회원 추가
+--userinfo insert(회원가입)
 insert into userinfo(u_no, u_id, u_pw, u_name, u_email, u_phone, u_address, u_birth, u_job, u_joindate)
 VALUES (userinfo_u_no_seq.nextval, 'itwill1', '1111', '김첨지', 'a@www.a.com', '11111111111', '사랑시고백구행복동','19500625',null,sysdate);
 insert into userinfo(u_no, u_id, u_pw, u_name, u_email, u_phone, u_address, u_birth, u_job, u_joindate)
@@ -26,3 +11,5 @@ insert into userinfo(u_no, u_id, u_pw, u_name, u_email, u_phone, u_address, u_bi
 VALUES (userinfo_u_no_seq.nextval, 'itwill5', '5555', '도요토미', 'e@www.japan.com', '5555555555', '몽골','20020202','독립운동가',sysdate);
 insert into userinfo(u_no, u_id, u_pw, u_name, u_email, u_phone, u_address, u_birth, u_job, u_joindate)
 VALUES (userinfo_u_no_seq.nextval, 'itwill6', '6666', '히데요시', 'f@www.love.com', '66666666666', '그랜드캐년','19990808','해군장교',sysdate);
+
+commit;

@@ -12,7 +12,7 @@ import com.itwill.common.DataSource;
 
 /*
  * Dao(Data[DataBase] Access Object)객체(클래스)
- *   - guest테이블에 CRUD(Create,Read,Update,Delet)작업을 하는 
+ *   - guest테이블에 CRUD(Create,Read,Update,Delete)작업을 하는 
  *     단위메쏘드를 가지고있는 객체(클래스)
  */
 public class GuestDao {
@@ -24,7 +24,7 @@ public class GuestDao {
 	public GuestDao() {
 		dataSource=new DataSource();
 	}
-	public int insertGuest(Guest guest)throws Exception {
+	public int insertGuest(Guest guest) throws Exception{
 		Connection con= dataSource.getConnection();
 		PreparedStatement pstmt=con.prepareStatement(GuestSQL.GUEST_INSERT);
 		pstmt.setString(1, guest.getGuest_name());

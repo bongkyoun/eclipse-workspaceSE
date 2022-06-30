@@ -15,7 +15,7 @@ insert into product values(6, '샤페이', 700000, 'shaipei.jpg','애교가많�
 insert into product values(7, '닥스훈트', 800000, 'dachshund.jpg','멋있어요.', 0);
 insert into product values(8, '사모예드', 800000, 'samoyed.jpg','용감해요.', 0);
 
-/********************product insert******************************/
+/********************????????????????*****************************/
 --guard1님 카트(insert)
 insert into cart(cart_no, cart_qty, p_no, userid) values(cart_cart_no_seq.nextval, 1, 3, 'guard1');
 insert into cart(cart_no, cart_qty, p_no, userid) values(cart_cart_no_seq.nextval, 2, 7, 'guard1');

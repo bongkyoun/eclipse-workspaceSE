@@ -1,6 +1,6 @@
 package 김봉균화이팅;
 
-import com.itwill.common.DataSource;
+import common.DataSource;
 
 public class UserInfoDAO {
 	private DataSource dataSource;

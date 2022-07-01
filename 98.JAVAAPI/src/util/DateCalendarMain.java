@@ -34,7 +34,7 @@ public class DateCalendarMain {
 		long duration = currentTimeMillis2 - currentTimeMillis1;
 		System.out.println(duration + " ms took..");
 
-		System.out.println("-------------SimpleDateFormat[Data-->String]-----------");
+		System.out.println("-------------SimpleDateFormat[Date-->String]-----------");
 		/*
 		 * SumpleDateFromat : Date 객체의 시간을 문자열로 변갱해주는 클래스
 		 */

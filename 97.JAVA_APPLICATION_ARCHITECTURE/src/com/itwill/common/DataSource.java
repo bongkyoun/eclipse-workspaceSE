@@ -23,5 +23,4 @@ public class DataSource {
 		Connection con=DriverManager.getConnection(url,user,password);
 		return con;
 	}
-
 }

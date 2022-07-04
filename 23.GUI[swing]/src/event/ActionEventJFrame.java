@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -29,6 +30,9 @@ import javax.swing.JPanel;
 	  버튼에다가 addActionListener를 붙이는 경우이다.
 	  ex> 버튼객체.addActionListener(핸들러객체);
 */
+//public class MouseHandler implements MouseListener {
+
+//}
 public class ActionEventJFrame extends JFrame {
 	private JPanel contentPane;
 	private JButton northBtn;
@@ -50,8 +54,42 @@ public class ActionEventJFrame extends JFrame {
 		westBtn=new JButton("이벤트소쓰[WEST]");
 		
 		/******** 이벤트소스에 이벤트핸들러객체 등록***************/
+		/**1. 외부 클래스**/
 		northBtn.addActionListener(new NorthButtonActionEventHandler());
+		/**2. 내부 클래스**/
 		southBtn.addActionListener(new SouthButtonActionEventHandler());
+		/**3. 이름없는 로컬 클래스**/
+		ActionListener westButtonHandler = new ActionListener() {
+		int count;
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("west button click!!");
+				/********outer 멤버 접근********/
+				setTitle("west button click["+ ++count +"]");
+				int r = (int)(Math.random()*256);
+				int g = (int)(Math.random()*256);
+				int b = (int)(Math.random()*256);
+				
+				contentPane.setBackground(new Color(r,g,b));
+			}	
+		};
+		westBtn.addActionListener(westButtonHandler);
+		eastBtn.addActionListener(new ActionListener() {
+			int count;
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("east button click!!!");
+				/******outer 멤버 접근******/
+				setTitle("east button click["+ ++count +"]");
+				int r = (int)(Math.random()*256);
+				int g= (int)(Math.random()*256);
+				int b = (int)(Math.random()*256);
+				
+				contentPane.setBackground(new Color(r,g,b));
+				
+			}
+		});
+		
 		
 		contentPane.add(northBtn,BorderLayout.NORTH);
 		contentPane.add(southBtn,BorderLayout.SOUTH);
@@ -59,7 +97,6 @@ public class ActionEventJFrame extends JFrame {
 		contentPane.add(westBtn,BorderLayout.WEST);
 		this.setSize(300, 400);
 	}
-	
 	/*********member inner class***********************/
 	public class SouthButtonActionEventHandler implements ActionListener{
 		int count;

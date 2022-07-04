@@ -14,14 +14,14 @@ public class AddressService {
 	private AddressDao addressDao;
 	public AddressService() {
 		addressDao=new AddressDao();
+		
 	}
-	
 	/*
 	 * 주소록쓰기
+	 * 	
 	 */
 	public int insert(Address newAddress) throws Exception{
-		int result = 0;//중복 0, 성공 1
-		
+		int result=0;//중복:0, 성공:1
 		/*
 		 * 1  .아이디중복체크
 		 * 2-1.중복아니면 insert (O)
@@ -32,37 +32,33 @@ public class AddressService {
 		if(findAddress==null) {
 			//아이디 중복안됨
 			addressDao.insert(newAddress);
-			result = 1;
+			result=1;
 		}else {
 			//아이디 중복됨
-			result = 0;
+			result=0;
 		}
 		
 		return result;
 	}
-
+	
 	/*
 	 * 주소록삭제(한개)
 	 */
-	public int deleteByNo(int no) throws Exception{
+	public int deleteByNo(int no)throws Exception {
 		return addressDao.deleteByNo(no);
 	}
-	
 	/*
 	 * 주소록수정(한개)
 	 */
 	public int updateByNo(Address updateAddress) throws Exception{
 		return addressDao.updateByNo(updateAddress);
-		
 	}
-	
 	/*
 	 * 주소록검색(번호)
 	 */
-	public Address selectByNo(int no) throws Exception{
+	public Address selectByNo(int no) throws Exception {
 		return addressDao.selectByNo(no);
 	}
-	
 	/*
 	 * 모든주소록검색
 	 */

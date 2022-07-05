@@ -13,15 +13,13 @@ public class CartDaoTestMain {
 	public static void main(String[] args) throws Exception {
 		CartDao cartDao=new CartDao();
 		System.out.println("1.add(insert)");
+		CartItem addCart=new CartItem(0,
+								new User("guard1", null, null, null),
+								new Product(8, null, 0, null, null, 0),
+								1);
 		int rowCount=-999;
 		/*
-		CartItem addCart=
-				new CartItem(0, 
-				new User("guard3", null, null, null),
-				new Product(1, null, 0, null, null, 0),
-				1);
 		rowCount = cartDao.add(addCart);
-		rowCount = cartDao.add("guard3",2, 1);
 		System.out.println(">> "+rowCount);
 		*/
 		System.out.println("2.updateByCartNo");
@@ -35,7 +33,6 @@ public class CartDaoTestMain {
 		System.out.println("3.delete");
 		rowCount=cartDao.deleteCartByNo(8);
 		System.out.println(">> "+rowCount);
-		
 		System.out.println("4.cartList[select]");
 		List<CartItem> cartList1=cartDao.getCartList("guard1");
 		System.out.println("guard1-->"+cartList1);
@@ -43,8 +40,6 @@ public class CartDaoTestMain {
 		System.out.println("guard2-->"+cartList2);
 		List<CartItem> cartList3=cartDao.getCartList("guard3");
 		System.out.println("guard3-->"+cartList3);
-		
-	
 		System.out.println("5.selectProductCount");
 		int productCount1=cartDao.selectProductCount("guard1",8 );
 		System.out.println(">> "+productCount1);

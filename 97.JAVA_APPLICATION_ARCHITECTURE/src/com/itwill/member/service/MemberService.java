@@ -81,8 +81,7 @@ public class MemberService {
 	 회원전체검색
 	*/
 	public List<Member> findAll() throws Exception{
-		
-		return null;
+		return memberDao.selectAll();
 	}
 	
 	/*

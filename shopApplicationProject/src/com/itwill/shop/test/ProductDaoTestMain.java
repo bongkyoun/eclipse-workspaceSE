@@ -8,8 +8,8 @@ public class ProductDaoTestMain {
 		ProductDao productDao=new ProductDao();
 		System.out.println("1.selectAll:");
 		System.out.println("  "+productDao.selectAll());
-		System.out.println("2.selectByNo:"+productDao.selectByNo(1));
-		System.out.println("2.selectByNo:"+productDao.selectByNo(2));
+		System.out.println("2.selectByNo:"+productDao.selectByNo(8));
+		System.out.println("2.selectByNo:"+productDao.selectByNo(9));
 
 	}
 
